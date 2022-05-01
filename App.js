@@ -1,30 +1,28 @@
-import * as React from 'react';
-import './App.css';
-import Navbar from './components/Navbar';
-import Test from './components/Test';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Services from './components/pages/Services';
-import Products from './components/pages/Products';
-import ContactUs from './components/pages/ContactUs';
-import SignUp from './components/pages/SignUp';
-import Marketing from './components/pages/Marketing';
-import Consulting from './components/pages/Consulting';
-import Home from './components/pages/Home';
+import React from 'react';
+import GlobalStyle from './globalStyles';
+import Home from './pages/HomePage/Home';
+import Services from './pages/Services/Services';
+import Products from './pages/Products/Products';
+import SignUp from './pages/SignUp/SignUp';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import ScrollToTop from './components/ScrollToTop';
+import { Navbar, Footer } from './components';
 
-export default function App() {
+function App() {
   return (
     <Router>
+      <GlobalStyle />
+      <ScrollToTop />
       <Navbar />
-      <Test />
-      <Routes>
+      <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/services" component={Services} />
         <Route path="/products" component={Products} />
-        <Route path="/contact-us" component={ContactUs} />
         <Route path="/sign-up" component={SignUp} />
-        <Route path="/marketing" component={Marketing} />
-        <Route path="/consulting" component={Consulting} />
-      </Routes>
+      </Switch>
+      <Footer />
     </Router>
   );
 }
+
+export default App;
