@@ -1,11 +1,15 @@
 import React from 'react';
+
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'bootstrap/dist/js/bootstrap.min.js';
+
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './Navbar';
-import Home from './Navbar';
-import BookNow from './Navbar';
-import About from './Navbar';
-import Contact from './Navbar';
+import Home from './Home';
+import BookNow from './BookNow';
+import About from './About';
+import Contact from './Contact';
 
 function App() {
   return (
