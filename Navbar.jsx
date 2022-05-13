@@ -9,7 +9,7 @@ function Navbar() {
           <div className="col-10 mx-auto">
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
               <div className="container-fluid">
-                <NavLink className="navbar-brand" to="#">
+                <NavLink className="navbar-brand" to="/">
                   Kapade
                 </NavLink>
                 <button
@@ -29,38 +29,22 @@ function Navbar() {
                 >
                   <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li className="nav-item">
-                      <NavLink
-                        activeClassName="menu_active"
-                        className="nav-link"
-                        to="/"
-                      >
+                      <NavLink exact className="nav-link" to="/">
                         Home
                       </NavLink>
                     </li>
                     <li className="nav-item">
-                      <NavLink
-                        activeClassName="menu_active"
-                        className="nav-link"
-                        to="/book"
-                      >
+                      <NavLink exact className="nav-link" to="/book">
                         Book Slot
                       </NavLink>
                     </li>
                     <li className="nav-item">
-                      <NavLink
-                        activeClassName="menu_active"
-                        className="nav-link"
-                        to="/about"
-                      >
+                      <NavLink exact className="nav-link" to="/about">
                         About
                       </NavLink>
                     </li>
                     <li className="nav-item">
-                      <NavLink
-                        activeClassName="menu_active"
-                        className="nav-link"
-                        to="/contact"
-                      >
+                      <NavLink exact className="nav-link" to="/contact">
                         Contact
                       </NavLink>
                     </li>
