@@ -29,22 +29,38 @@ function Navbar() {
                 >
                   <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li className="nav-item">
-                      <NavLink className="nav-link" to="/">
+                      <NavLink
+                        activeClassName="menu_active"
+                        className="nav-link"
+                        to="/"
+                      >
                         Home
                       </NavLink>
                     </li>
                     <li className="nav-item">
-                      <NavLink className="nav-link" to="/book">
-                        Book Now
+                      <NavLink
+                        activeClassName="menu_active"
+                        className="nav-link"
+                        to="/book"
+                      >
+                        Book Slot
                       </NavLink>
                     </li>
                     <li className="nav-item">
-                      <NavLink className="nav-link" to="/about">
+                      <NavLink
+                        activeClassName="menu_active"
+                        className="nav-link"
+                        to="/about"
+                      >
                         About
                       </NavLink>
                     </li>
                     <li className="nav-item">
-                      <NavLink className="nav-link" to="/contact">
+                      <NavLink
+                        activeClassName="menu_active"
+                        className="nav-link"
+                        to="/contact"
+                      >
                         Contact
                       </NavLink>
                     </li>
