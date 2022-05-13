@@ -1,23 +1,23 @@
 import React from 'react';
-import Navbar from './components/Navbar';
 import './App.css';
-import Home from './components/pages/Home';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Services from './components/pages/Services';
-import Products from './components/pages/Products';
-import SignUp from './components/pages/SignUp';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './Navbar';
+import Home from './Navbar';
+import BookNow from './Navbar';
+import About from './Navbar';
+import Contact from './Navbar';
 
 function App() {
   return (
     <>
       <Router>
         <Navbar />
-        <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/services" component={Services} />
-          <Route path="/products" component={Products} />
-          <Route path="/sign-up" component={SignUp} />
-        </Switch>
+        <Routes>
+          <Route path="/" exact element={<Home />} />
+          <Route path="/book" exact element={<BookNow />} />
+          <Route path="/about" exact element={<About />} />
+          <Route path="/contact" exact element={<Contact />} />
+        </Routes>
       </Router>
     </>
   );
