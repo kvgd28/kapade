@@ -9,7 +9,8 @@ function Home() {
             <div className="col-10 mx-auto">
               <div className="col-sm-6 pt-5 pt-lg-0 order-2 order-lg-1">
                 <h1>
-                  Grow your business with <strong>Kapade</strong>
+                  Grow your business with{' '}
+                  <strong className="brand-name">Kapade</strong>
                 </h1>
                 <h2 className="my-3">We are the team of logistics</h2>
                 <div className="mt-3">
